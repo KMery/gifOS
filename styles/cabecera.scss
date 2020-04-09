@@ -1,0 +1,212 @@
+// @import "variables_light"; 
+@import "variables_dark";
+
+body {
+    background-color: $bcolor1;
+    display: flex;
+    justify-content: center;
+    font-family: 'Chakra Petch', sans-serif;
+    flex-direction: column;
+    margin: 0;
+
+    header {
+        background: linear-gradient(to right, $barcolor2, $barcolor1);
+        color: white; 
+        height: 23px;
+        // width: 100%;
+        float: left;
+
+        p {
+            font-size: 12px;
+            margin: 0;
+            padding: 0;
+        }
+    }
+
+    button, header {
+        border: 1px solid $border;
+        font-family: 'Chakra Petch', sans-serif;
+    }
+
+    nav, section {
+        margin: 44px 91px 44px 91px;
+    }
+
+    nav {
+        align-items: column;
+
+        button {
+            background-color: $bcolor2;
+            color: $border; 
+        }
+
+
+        .intro {
+            display: flex;
+            justify-content: space-between;
+            // width: 1194px;
+
+            .logo {
+                justify-content: flex-start;
+                a {
+                    img {
+                        width: 24px;
+                    }
+                }
+
+                img {
+                    width: 102.6px;
+                    height: 64px;
+                }
+            }
+
+            .botones {
+                display: flex;
+                // flex-direction: row;
+                justify-content: flex-end;
+
+                a {
+                    text-decoration: none;
+                }
+                
+                button {
+                    width: 144px;
+                    height: 36px;
+                    margin: 0px 10px 0px 10px;
+                }
+
+                #temas {
+                    // display: flex;
+                    flex-direction: row; 
+                    
+                    .dropdown {
+                        position: relative;
+                        display: flex;
+
+                        .dropbtn {
+                            display: flex;
+                            justify-content: flex-start;
+
+                            button:first-child {
+                                width: 127px;
+                                height: 36px;
+                                margin: 0;
+                                padding: 0;
+                            }
+                            button:last-child {
+                                margin: 0;
+                                padding: 0;
+                                width: 32px;
+                                height: 36px;
+                                margin-right: 10px;
+                                // cursor: pointer;
+                            }
+                        }
+                      }
+
+                    .dropdown-content {
+                        display: none;
+                        position: absolute;
+                        background-color: $bcolor9;
+                        width: 170px;
+                        height: 102px;
+                        margin-top: 36px;
+
+                        a {
+                            // position: relative;
+                            display: block;
+                            color: $wordColor2;
+                            font-size: 16px;
+                            text-decoration: none;
+                            min-width: 150px;
+                            min-height: 36px;
+                            border: 1px solid $border2;
+                            background-color: $bcolor5;
+                            // padding: 4px;
+                            margin: 0px 10px 0px 10px;
+                        }
+
+                        a:hover {
+                            border: 1.5px solid $border3;
+                            background-color: $bcolor3;
+                        }
+                    }
+
+                    .show {
+                        display: block;
+                    }
+                }
+            }
+        }
+
+        .search {
+            min-width: 1194px;
+            box-shadow: inset -2px -2px $shadowBox;
+            background-color: $bcolor1;
+
+            p {
+                height: 24px;
+                background: linear-gradient(to right, $barcolor2, $barcolor1);
+                color: $wordColor;
+            }
+
+            input, button {
+                margin-top: 10px;
+                margin-bottom: 10px;
+            }
+
+            input {
+                min-width: 1057px;
+                height: 48px;
+                margin-left: 5px;
+            }
+    
+            button {
+                width: 98px;
+                height: 32px;
+                margin-right: 5px;
+            }
+
+            button:active {
+                color: $shadowBox;
+                background-color: $bcolor3;
+            }
+
+            #myUL {
+                list-style-type: none;
+                padding: 0;
+                margin: 0;
+                background-color: $bcolor9;
+                width: 1200px;
+                display: none;
+                // overflow-x: visible; 
+                // overflow-y: visible;
+                
+
+                li {
+                    .sugerido  {
+                        margin-left: 16px;
+                        margin-bottom: 10px;
+                        width: 1057px;
+                        height: 24px;
+                        border: 1px solid $border3;
+                        margin-top: -1px;
+                        background-color: $bcolor3;
+                        padding: 12px;
+                        text-decoration: none;
+                        font-size: 16px;
+                        color: black;
+                        display: block
+                      }
+
+                      .sugerido:hover:not(.header) {
+                        background-color: $bcolor7;
+                      }
+                }
+            }
+        }
+    }
+
+}
+
+

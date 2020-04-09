@@ -1,0 +1,132 @@
+body {
+  background-color: #110038;
+  display: flex;
+  justify-content: center;
+  font-family: 'Chakra Petch', sans-serif;
+  flex-direction: column;
+  margin: 0; }
+  body header {
+    background: linear-gradient(to right, #4180F6, #EE3EFE);
+    color: white;
+    height: 23px;
+    float: left; }
+    body header p {
+      font-size: 12px;
+      margin: 0;
+      padding: 0; }
+  body button, body header {
+    border: 1px solid #110038;
+    font-family: 'Chakra Petch', sans-serif; }
+  body nav, body section {
+    margin: 44px 91px 44px 91px; }
+  body nav {
+    align-items: column; }
+    body nav button {
+      background-color: #EE3EFE;
+      color: #110038; }
+    body nav .intro {
+      display: flex;
+      justify-content: space-between; }
+      body nav .intro .logo {
+        justify-content: flex-start; }
+        body nav .intro .logo a img {
+          width: 24px; }
+        body nav .intro .logo img {
+          width: 102.6px;
+          height: 64px; }
+      body nav .intro .botones {
+        display: flex;
+        justify-content: flex-end; }
+        body nav .intro .botones a {
+          text-decoration: none; }
+        body nav .intro .botones button {
+          width: 144px;
+          height: 36px;
+          margin: 0px 10px 0px 10px; }
+        body nav .intro .botones #temas {
+          flex-direction: row; }
+          body nav .intro .botones #temas .dropdown {
+            position: relative;
+            display: flex; }
+            body nav .intro .botones #temas .dropdown .dropbtn {
+              display: flex;
+              justify-content: flex-start; }
+              body nav .intro .botones #temas .dropdown .dropbtn button:first-child {
+                width: 127px;
+                height: 36px;
+                margin: 0;
+                padding: 0; }
+              body nav .intro .botones #temas .dropdown .dropbtn button:last-child {
+                margin: 0;
+                padding: 0;
+                width: 32px;
+                height: 36px;
+                margin-right: 10px; }
+          body nav .intro .botones #temas .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #E6E6E6;
+            width: 170px;
+            height: 102px;
+            margin-top: 36px; }
+            body nav .intro .botones #temas .dropdown-content a {
+              display: block;
+              color: #110038;
+              font-size: 16px;
+              text-decoration: none;
+              min-width: 150px;
+              min-height: 36px;
+              border: 1px solid #33358F;
+              background-color: #FFF4FD;
+              margin: 0px 10px 0px 10px; }
+            body nav .intro .botones #temas .dropdown-content a:hover {
+              border: 1.5px solid #808080;
+              background-color: #B4B4B4; }
+          body nav .intro .botones #temas .show {
+            display: block; }
+    body nav .search {
+      min-width: 1194px;
+      box-shadow: inset -2px -2px #B4B4B4;
+      background-color: #110038; }
+      body nav .search p {
+        height: 24px;
+        background: linear-gradient(to right, #4180F6, #EE3EFE);
+        color: #FFFFFF; }
+      body nav .search input, body nav .search button {
+        margin-top: 10px;
+        margin-bottom: 10px; }
+      body nav .search input {
+        min-width: 1057px;
+        height: 48px;
+        margin-left: 5px; }
+      body nav .search button {
+        width: 98px;
+        height: 32px;
+        margin-right: 5px; }
+      body nav .search button:active {
+        color: #B4B4B4;
+        background-color: #B4B4B4; }
+      body nav .search #myUL {
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+        background-color: #E6E6E6;
+        width: 1200px;
+        display: none; }
+        body nav .search #myUL li .sugerido {
+          margin-left: 16px;
+          margin-bottom: 10px;
+          width: 1057px;
+          height: 24px;
+          border: 1px solid #808080;
+          margin-top: -1px;
+          background-color: #B4B4B4;
+          padding: 12px;
+          text-decoration: none;
+          font-size: 16px;
+          color: black;
+          display: block; }
+        body nav .search #myUL li .sugerido:hover:not(.header) {
+          background-color: #808080; }
+
+/*# sourceMappingURL=cabecera_generado2.css.map */

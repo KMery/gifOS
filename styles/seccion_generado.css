@@ -1,0 +1,223 @@
+body main {
+  font-family: 'Chakra Petch', sans-serif;
+  margin-left: 90px;
+  display: flex;
+  flex-direction: column; }
+  body main p {
+    border: 1px solid #FFFFFAFE;
+    background-color: #FFFAFE;
+    padding: 1px;
+    width: 1200px;
+    height: 32px;
+    box-shadow: inset 2px 2px #B4B4B4; }
+  body main #btn-stop-recording {
+    display: none; }
+  body main .container {
+    justify-content: center;
+    display: flex; }
+    body main .container .title {
+      top: 0;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between; }
+      body main .container .title p {
+        color: #FFFFFF;
+        background: linear-gradient(to right, #4180F6, #F7C9F3); }
+      body main .container .title img {
+        width: 16px;
+        height: 14px;
+        background-color: #F7C9F3;
+        align-items: flex-end; }
+    body main .container .grabar {
+      width: 684px;
+      height: 386px;
+      border: 1px solid #110038;
+      justify-content: center;
+      flex-direction: column;
+      background-color: #B4B4B4;
+      margin: 0;
+      padding: 0; }
+      body main .container .grabar p {
+        display: inline-block;
+        width: 682px;
+        height: 24px;
+        margin: 0;
+        padding: 0; }
+      body main .container .grabar .title {
+        display: block; }
+        body main .container .grabar .title p {
+          box-sizing: content-box;
+          width: 100%; }
+      body main .container .grabar img {
+        float: right;
+        transform: translateY(-20px); }
+      body main .container .grabar .grabar_content {
+        padding: 36px 100px 93px 73px;
+        display: flex; }
+        body main .container .grabar .grabar_content img {
+          width: 32px;
+          height: 32px;
+          margin-right: 10px;
+          transform: translateY(20px); }
+        body main .container .grabar .grabar_content .grabar_instrucciones {
+          justify-content: flex-end; }
+          body main .container .grabar .grabar_content .grabar_instrucciones .grabar_texto {
+            height: 190px; }
+            body main .container .grabar .grabar_content .grabar_instrucciones .grabar_texto p {
+              width: 518px;
+              color: #110038;
+              font-size: 14px;
+              box-shadow: none;
+              background-color: #B4B4B4;
+              border: none; }
+          body main .container .grabar .grabar_content .grabar_instrucciones .grabar_boton {
+            display: flex;
+            justify-content: space-between;
+            transform: translate(230px, 50px);
+            width: 304px; }
+            body main .container .grabar .grabar_content .grabar_instrucciones .grabar_boton button {
+              width: 144px;
+              height: 36px;
+              flex-direction: row; }
+            body main .container .grabar .grabar_content .grabar_instrucciones .grabar_boton button:first-child {
+              background-color: #FFF4FD; }
+            body main .container .grabar .grabar_content .grabar_instrucciones .grabar_boton button:last-child {
+              background-color: #F7C9F3; }
+          body main .container .grabar .grabar_content .grabar_instrucciones .grabar_boton2 {
+            width: 838px;
+            transform: translate(-60px, -20px);
+            justify-content: flex-end; }
+            body main .container .grabar .grabar_content .grabar_instrucciones .grabar_boton2 button {
+              background-color: #FFF4FD; }
+      body main .container .grabar .capturando {
+        margin-left: 15px;
+        display: flex;
+        flex-direction: column;
+        transform: translateY(-10px);
+        padding: 0; }
+        body main .container .grabar .capturando img {
+          margin-top: 3.5%;
+          border: 1px solid #110038;
+          width: 550px;
+          height: 280px; }
+        body main .container .grabar .capturando .captura_content {
+          display: flex;
+          flex-direction: row;
+          justify-content: space-between; }
+          body main .container .grabar .capturando .captura_content input {
+            width: 127px;
+            transform: translateY(-15px); }
+          body main .container .grabar .capturando .captura_content .capturabtn {
+            display: flex;
+            justify-content: flex-start;
+            align-items: flex-start;
+            box-sizing: content-box;
+            transform: translateY(-15px); }
+            body main .container .grabar .capturando .captura_content .capturabtn button {
+              background-color: #F7C9F3;
+              margin: 0;
+              padding: 0; }
+            body main .container .grabar .capturando .captura_content .capturabtn button:first-child {
+              width: 32px;
+              height: 36px;
+              background-image: url("../images/camera.svg");
+              background-repeat: no-repeat;
+              background-position: center; }
+            body main .container .grabar .capturando .captura_content .capturabtn button:last-child {
+              width: 127px;
+              height: 36px;
+              margin-right: 10px; }
+      body main .container .grabar .infoSubir {
+        background-color: #FFF4FD;
+        border: 1px solid #110038;
+        width: 838px;
+        height: 420px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        padding: 5px; }
+        body main .container .grabar .infoSubir h2 {
+          font-size: 16px;
+          color: #110038; }
+    body main .container #subiendoGif {
+      width: 860px;
+      height: 548px;
+      display: none; }
+  body main .grabado {
+    margin: 0;
+    padding: 0;
+    width: 721px;
+    height: 380px;
+    display: none; }
+    body main .grabado .upOptions {
+      transform: translateY(-350px); }
+      body main .grabado .upOptions img {
+        float: left;
+        margin-left: 20px;
+        border: 1px solid #110038;
+        width: 365px;
+        height: 191px; }
+      body main .grabado .upOptions .cargarBoton {
+        box-sizing: content-box;
+        float: right;
+        display: flex;
+        flex-direction: column;
+        transform: translateX(-40px); }
+        body main .grabado .upOptions .cargarBoton input {
+          display: none; }
+        body main .grabado .upOptions .cargarBoton p {
+          color: #110038;
+          background-color: #B4B4B4;
+          width: 100%;
+          border: none;
+          box-shadow: none; }
+        body main .grabado .upOptions .cargarBoton .botonUp1 {
+          height: 36px;
+          width: 256px;
+          background-color: #FFF4FD;
+          margin-bottom: 20px; }
+        body main .grabado .upOptions .cargarBoton .botonUp2 {
+          transform: translate(100px, 80px);
+          width: 144px;
+          height: 36px;
+          background-color: #F7C9F3; }
+  body main .gifs {
+    width: 1200px;
+    display: flex;
+    flex-flow: row wrap; }
+    body main .gifs .element {
+      padding-right: 12px;
+      margin-bottom: 68px;
+      font-size: 0; }
+      body main .gifs .element p {
+        width: 280px;
+        height: 24px;
+        font-size: 14px;
+        background: linear-gradient(to right, #4180F6, #F7C9F3);
+        color: #FFFFFF;
+        margin: 0;
+        padding: 0; }
+        body main .gifs .element p img {
+          width: 16px;
+          height: 14px;
+          float: right; }
+      body main .gifs .element img {
+        width: 280px;
+        height: 280px;
+        border: 1px solid #FFFFFAFE; }
+      body main .gifs .element img:hover {
+        width: 280.5px;
+        height: 280.5px;
+        border: 1px solid #B4B4B4; }
+      body main .gifs .element button {
+        width: 81px;
+        height: 34px;
+        font-size: 14px;
+        background-color: #4180F6;
+        color: #FFFFFF;
+        border: 1px solid #110038;
+        position: absolute;
+        transform: translate(-270px, 220px); }
+
+/*# sourceMappingURL=seccion_generado.css.map */

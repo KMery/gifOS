@@ -1,0 +1,372 @@
+// @import "variables_light";  
+@import "variables_dark";
+
+body {
+    main {
+        font-family: 'Chakra Petch', sans-serif;
+        margin-left: 90px;
+        display: flex;
+        flex-direction: column;
+    
+        p {
+            border: 1px solid $bcolor1;
+            background-color: $bcolor4;
+            padding: 1px;
+            width: 1200px;
+            height: 32px;
+            box-shadow: inset 2px 2px $shadowBox;
+        } 
+    
+        #btn-stop-recording {
+            display: none;
+            // display: '';
+        }
+    
+    
+        .container {
+            justify-content: center;
+            display: flex;;
+    
+            .title {
+                // background: linear-gradient(to right, $barcolor2, $barcolor1);
+                top: 0;
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+        
+        
+                p {
+                    color: $wordColor;
+                    // width: 640px;
+                    background: linear-gradient(to right, $barcolor2, $barcolor1);
+                    // transform: translateY(-20px);
+                    // position: relative;
+                }
+        
+                img {
+                    width: 16px;
+                    height: 14px;
+                    background-color: $barcolor1;
+                    align-items: flex-end;
+                    // float: right;
+                    // transform: translateY(20px);
+                    // position: absolute;
+                    // float: right;
+                }
+            }
+    
+            .grabar {
+                width: 684px;
+                height: 386px;
+                border: 1px solid $border;
+                justify-content: center;
+                flex-direction: column;
+                background-color: $bcolor7;
+                margin: 0;
+                padding: 0;
+                        
+                p {
+                    display: inline-block;
+                    width: 682px;
+                    // width: 680px;
+                    height: 24px;
+                    margin: 0;
+                    padding: 0;
+                    // top: 0;
+                }
+    
+                .title {
+                    // background-origin: content-box;
+                    // flex-direction: row;
+                    display: block;
+                    // margin: 0;
+                    // padding: 0;
+                    // top: 0;
+    
+                    p{
+                        box-sizing: content-box;
+                        width: 100%;
+                    }
+                }
+                
+                img {
+                    // width: 16px;
+                    // height: 14px;
+                    float: right;
+                    transform: translateY(-20px);
+                }
+        
+                .grabar_content {
+                    padding: 36px 100px 93px 73px;
+                    display: flex;
+        
+                    img {
+                        // float: right;
+                        width: 32px;
+                        height: 32px;
+                        margin-right: 10px;
+                        transform: translateY(20px);
+                    }
+        
+                    .grabar_instrucciones {
+                        justify-content: flex-end;
+        
+                        .grabar_texto {
+                            height: 190px;
+            
+                            p {
+                                width: 518px;
+                                color: $wordColor2;
+                                font-size: 14px;
+                                box-shadow: none;
+                                background-color: $bcolor7;
+                                border: none;
+                            }
+                        }
+                        
+                        .grabar_boton {
+                            display: flex;
+                            justify-content: space-between;
+                            transform: translate(230px, 50px);
+                            width: 304px;
+                
+                            button {
+                                width: 144px;
+                                height: 36px;
+                                flex-direction: row;
+                            }
+        
+                            button:first-child {
+                                background-color: $bcolor5;
+                            }
+                
+                            button:last-child {
+                                background-color: $bcolor6;
+                            }
+                        }
+    
+    
+                        .grabar_boton2 {
+                            // width: 58,2%;
+                            width: 838px;
+                            transform: translate(-60px, -20px);
+                            // transform: translateY(-20px);
+                            justify-content: flex-end;
+    
+                            button {
+                                background-color: $bcolor5;
+                            }
+                        }
+                    }
+                }
+    
+                .capturando {
+                    margin-left: 15px;
+                    display: flex;
+                    flex-direction: column;
+                    transform: translateY(-10px);
+                    // margin: 0;
+                    padding: 0;
+                    
+                    img {
+                        margin-top: 3.5%;
+                        // align-items: flex-end; 
+                        border: 1px solid $border;
+                        width: 550px;
+                        height: 280px;
+                        // position: relative;
+                    }
+    
+                    .captura_content {
+                        display: flex;
+                        flex-direction: row;
+                        justify-content: space-between;
+                        // padding: 0;
+                        // margin: 0;
+    
+                        input {
+                            width: 127px;
+                            transform: translateY(-15px);
+                        }
+        
+                        .capturabtn {
+                            display: flex;
+                            justify-content: flex-start;
+                            align-items: flex-start;
+                            box-sizing: content-box;
+                            transform: translateY(-15px);
+        
+                            button {
+                                background-color: $bcolor6;
+                                margin: 0;
+                                padding: 0;
+                            }
+        
+                            button:first-child {
+                                width: 32px;
+                                height: 36px;
+                                background-image: url('../images/camera.svg');
+                                background-repeat: no-repeat;
+                                background-position: center;
+                                
+                            }
+                            button:last-child {
+                                width: 127px;
+                                height: 36px;
+                                margin-right: 10px;
+                                // cursor: pointer;
+                            }
+
+                        }    
+                    }
+                }
+    
+                .infoSubir {
+                    background-color: $bcolor5;
+                    border: 1px solid $border;
+                    // width: 58,2%;
+                    // height: 43%;
+                    width: 838px;
+                    height: 420px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    flex-direction: column;
+                    padding: 5px;
+    
+                    h2 {
+                        // width: 500px;
+                        // display: inline-block;    
+                        font-size: 16px;
+                        color: $wordColor2
+                    }
+
+                }
+            }
+    
+            #subiendoGif {
+                // width: 59.7%;
+                // height: 53.5%;
+                width: 860px;
+                height: 548px;
+                display: none;
+            }
+        }
+    
+
+                .grabado {
+                    margin: 0;
+                    padding: 0;
+                    width: 721px;
+                    height: 380px;
+                    // border: 1px solid $border;
+                    display: none;
+
+                    .upOptions {
+                        transform: translateY(-350px);
+
+                        img {
+                            float: left;
+                            margin-left: 20px;
+                            border: 1px solid $border;
+                            // width: 280px;
+                            // height: 280px;
+                            width: 365px;
+                            height: 191px;
+                        }
+            
+                        .cargarBoton {
+                            box-sizing: content-box;
+                            float: right;
+                            display: flex;
+                            flex-direction: column;
+                            // margin-right: 10px;
+                            transform: translateX(-40px);
+
+                            input {
+                             display: none;   
+                            }
+
+                            p {
+                                color: $wordColor2;
+                                background-color: $bcolor7;
+                                width: 100%;
+                                border: none;
+                                box-shadow: none;
+                            }
+                            
+                            .botonUp1 {
+                                height: 36px;
+                                width: 256px;
+                                background-color: $bcolor5;
+                                margin-bottom: 20px;
+                            }
+        
+                            .botonUp2 {
+                                // justify-content: flex-end;
+                                transform: translate(100px, 80px);
+                                width: 144px;
+                                height: 36px;
+                                background-color: $bcolor6;
+                            }
+                        }
+                    }
+   
+                }    
+
+        .gifs {
+            width: 1200px;
+            display: flex;
+            // flex-wrap: wrap;
+            flex-flow: row wrap;
+            
+            .element {
+                // flex-direction: row;
+                padding-right: 12px;
+                margin-bottom: 68px;
+                font-size: 0;
+        
+                p {
+                    // display: none;
+                    width: 280px;
+                    height: 24px;
+                    font-size: 14px;
+                    background: linear-gradient(to right, $barcolor2, $barcolor1);
+                    color: $wordColor;
+                    margin: 0;
+                    padding: 0;
+        
+                    img {
+                        width: 16px;
+                        height: 14px;
+                        float: right;
+                    }
+                }
+    
+                img {
+                    width: 280px;
+                    height: 280px;
+                    border: 1px solid $bcolor1;
+                }
+    
+                img:hover {
+                    width: 280.5px;
+                    height: 280.5px;
+                    border: 1px solid $shadowBox;
+                }
+    
+                button {
+                    width: 81px;
+                    height: 34px;
+                    font-size: 14px;
+                    background-color: $barcolor2;
+                    color: $wordColor;
+                    border: 1px solid $border;
+                    position: absolute;
+                    transform: translate(-270px, 220px);
+                }
+            }
+        }
+    }
+}
+

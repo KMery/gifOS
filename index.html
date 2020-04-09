@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>gifOS</title>
+    <!-- estilos -->
+    <link rel="stylesheet" href="./styles/cabecera_generado.css">
+    <link rel="stylesheet" href="./styles/seccion_generado.css">
+    <!-- fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Chakra+Petch&display=swap" rel="stylesheet"> 
+</head>
+<body>
+    <header>
+        <p>¡Bienvenidos/as a Guifos.com! ——————Donde los gifs están.////// Número de visitas: 12.765.803</p>
+    </header>
+    <!-- revisar why existe este siguiente div -->
+    <div>
+        <nav>
+            <div class="intro">
+                <div class="logo">
+                    <img id="logo" src="./images/gifOF_logo.png" alt="No hay imagen :C">
+                </div>
+                <div class="botones">
+                    <!-- onclick="misGif(false)" -->
+                    <!-- <a href="crearGifOS.html"><button id="crearGif">Crear GifOS</button></a> -->
+                    <button onclick="crearGif()">Crear GifOS</button>
+                    <div id="temas">
+                        <!-- <button>Elegir tema</button> -->
+                        <div class="dropdown">
+                            <!-- <button onclick="myDropdown()" class="dropbtn">Elegir tema   | ⮟</button> -->
+                            <div class="dropbtn">
+                                <button class="dbtn" onclick="myDropdown()">Elegir tema</button>
+                                <button class="dbtn" onclick="myDropdown()">⮟</button>
+                            </div>
+                            <div id="myDropdown" class="dropdown-content">
+                                <a onclick="theme('dia')">Sailor Day</a><br>
+                                <a onclick="theme('noche')">Sailor Night</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- href="crearGifOS.html" -->
+                    <!-- onclick="misGif(true)" -->
+                    <a href="misGifOS.html" ><u>M</u>is GifOS</a>
+                </div>
+            </div>
+            <div class="search">
+                <p>Buscar</p>
+                <input type="text" onkeyup="mySearch()" id="myInput" placeholder="Busca Gif, hashtags, Busca lo que quieras">
+                <button onclick="selectedSearch()">Buscar</button>
+                <ul id="myUL">
+                    <li><a class="sugerido">Kittens</a></li>
+                    <li><a class="sugerido">Puppies</a></li>
+                    <li><a class="sugerido">Funny</a></li>
+                    <li><a class="sugerido">Trending</a></li>
+                    <li><a class="sugerido">Popular</a></li>
+                    <li><a class="sugerido">Awesome</a></li>
+                    <li><a class="sugerido">Amazing</a></li>
+                    <li><a class="sugerido">Crazy</a></li>
+                    <li><a class="sugerido">Anime</a></li>
+                    <li><a class="sugerido">Cool</a></li>
+                </ul>
+            </div>
+        </nav>
+        <main>
+            <div class="grabar"></div>
+            <p>Hoy te sugerimos:</p>
+            <div id="Hoy" class="gifs">
+                <!-- <div class="element">
+                    <p>Titulo<img src="./images/close.svg" alt="Nop"></p>
+                    <img src="https://media1.giphy.com/media/wkW0maGDN1eSc/giphy.gif?cid=7acfa2c7d0cd9f4d96a192c8f091a79a6df0bfd7d6327adb&rid=giphy.gif" alt="No hay GIF :C">
+                    <button>Ver Mas...</button>
+                </div>
+                <div class="element">
+                    <p>Titulo<img src="./images/close.svg" alt="Nop"></p>
+                    <img src="https://media3.giphy.com/media/VqaEyOIjZuTM4/giphy.gif?cid=7acfa2c7396d6d1086cbed81acaac6ed7489c816fc29cfee&rid=giphy.gif" alt="No hay GIF :C">
+                    <button>Ver Mas...</button>
+                </div>
+                <div class="element">
+                    <p>Titulo<img src="./images/close.svg" alt="Nop"></p>
+                    <img src="https://media2.giphy.com/media/3ohzdIuqJoo8QdKlnW/giphy.gif?cid=7acfa2c74c26b8ee6aff11ff600857d5f71904ec8de65035&rid=giphy.gif" alt="No hay GIF :C">
+                    <button>Ver Mas...</button>
+                </div>
+                <div class="element">
+                    <p>Titulo<img src="./images/close.svg" alt="Nop"></p>
+                    <img src="https://media2.giphy.com/media/137qIhWsIf9bDW/giphy.gif?cid=7acfa2c7d0cd9f4d96a192c8f091a79a6df0bfd7d6327adb&rid=giphy.gif" alt="No hay GIF :C">
+                    <button>Ver Mas...</button>
+                </div>
+               -->
+            </div>
+
+            <p>Tendencias:</p>
+            <div id="Tendencias" class="gifs">
+                <!-- <div class="element">
+                    <p>Titulo<img src="./images/close.svg" alt="Nop"></p>
+                    <img src="https://media2.giphy.com/media/eCqFYAVjjDksg/giphy.gif?cid=7acfa2c7e03fd2b11e8b4f9589791241cfa8ca581b779544&rid=giphy.gif" alt="No hay GIF :C">
+                </div>
+                <div class="element">
+                    <p>Titulo<img src="./images/close.svg" alt="Nop"></p>
+                    <img src="https://media3.giphy.com/media/Qxdurj3ryTbr2/giphy.gif?cid=7acfa2c78232afbb8bf5c77dd86ba43bba3fdfe8b8a7da02&rid=giphy.gif" alt="No hay GIF :C">
+                </div>
+                <div class="element">
+                    <p>Titulo<img src="./images/close.svg" alt="Nop"></p>
+                    <img src="https://media2.giphy.com/media/cfuL5gqFDreXxkWQ4o/giphy.gif?cid=7acfa2c76337c5d71295615b0e7cf730a3daa5dcc3632a62&rid=giphy.gif" alt="No hay GIF :C">
+                </div>
+                <div class="element">
+                    <p>Titulo<img src="./images/close.svg" alt="Nop"></p>
+                    <img src="https://media3.giphy.com/media/13HgwGsXF0aiGY/giphy.gif?cid=7acfa2c7e03fd2b11e8b4f9589791241cfa8ca581b779544&rid=giphy.gif" alt="No hay GIF :C">
+                </div> -->
+            </div>
+        </main>
+    </div>
+    <!-- JS -->
+    <script src="./scripts/index.js"></script>
+    <script src="./scripts/color_theme.js"></script>
+    <script src="./scripts/gifOS.js"></script>
+</body>
+</html>
