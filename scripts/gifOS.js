@@ -196,7 +196,7 @@ function copyToClipboard() {
   document.execCommand("copy");
 
   /* Alert the copied text */
-  alert("Se ha copiado el link a tu Gif");
+  alert("Se ha copiado el link a tu Gif "+inputValor.value);
 } 
 
 
