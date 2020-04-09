@@ -9,7 +9,7 @@ image.src = '';
 preview.src = '';
 if (localStorage.getItem('idGif') !== null) {
   window.array_gif = JSON.parse(localStorage.getItem('idGif'))
-console.log(array_gif);
+// console.logg(array_gif);
 }
 
 
@@ -91,7 +91,7 @@ document.getElementById('btn-start-recording').onclick = function() {
         cambio_color.getElementsByTagName("button").item(0).style.backgroundImage = "url('../images/recording.svg')";
         // cambio_color.getElementsByTagName("button").item(1).style.backgroundColor = '#FF6161';
         nuevo_boton.style.backgroundColor = '#FF6161';
-        
+
         // console.log(cambio_color.getElementsByTagName("button").item(0).style.backgroundImage);
         
         // nuevo_boton.style.backgroundColor = '#FF6161';
