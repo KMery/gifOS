@@ -75,10 +75,12 @@ function crearElemento(tag, titulo, source) {
       var para = document.createElement("p");
       var tnode1 = document.createTextNode(titulo);
       para.appendChild(tnode1)
-      var imagenp = document.createElement("img");
-      imagenp.setAttribute("src", "./images/close.svg");
-      imagenp.setAttribute("alt", "No hay gif :C");
-      para.appendChild(imagenp)
+      if (tag === hoy) {
+        var imagenp = document.createElement("img");
+        imagenp.setAttribute("src", "./images/close.svg");
+        imagenp.setAttribute("alt", "No hay gif :C");
+        para.appendChild(imagenp) 
+      }
       seccion.appendChild(para);  
     }         
 
